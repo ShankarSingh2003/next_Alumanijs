@@ -1,0 +1,54 @@
+[debug] [2024-10-06T11:26:22.376Z] ----------------------------------------------------------------------
+[debug] [2024-10-06T11:26:22.379Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shiva\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-06T11:26:22.379Z] CLI Version:   13.20.2
+[debug] [2024-10-06T11:26:22.379Z] Platform:      win32
+[debug] [2024-10-06T11:26:22.379Z] Node Version:  v20.12.2
+[debug] [2024-10-06T11:26:22.380Z] Time:          Sun Oct 06 2024 16:56:22 GMT+0530 (India Standard Time)
+[debug] [2024-10-06T11:26:22.380Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-06T11:26:22.436Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-06T11:26:22.437Z] > authorizing via signed-in user (sivashankarsingh8765@gmail.com)
+[debug] [2024-10-06T11:26:22.437Z] [iam] checking project my-alumni-b58a1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-06T11:26:22.438Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:22.438Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:22.439Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-alumni-b58a1:testIamPermissions [none]
+[debug] [2024-10-06T11:26:22.439Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-alumni-b58a1:testIamPermissions x-goog-quota-user=projects/my-alumni-b58a1
+[debug] [2024-10-06T11:26:22.439Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-alumni-b58a1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-06T11:26:24.464Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-alumni-b58a1:testIamPermissions 200
+[debug] [2024-10-06T11:26:24.464Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-alumni-b58a1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-06T11:26:24.465Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:24.465Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:24.465Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-alumni-b58a1 [none]
+[debug] [2024-10-06T11:26:25.200Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-alumni-b58a1 200
+[debug] [2024-10-06T11:26:25.200Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-alumni-b58a1 {"projectId":"my-alumni-b58a1","projectNumber":"514371997408","displayName":"MY-ALUMNI","name":"projects/my-alumni-b58a1","resources":{"hostingSite":"my-alumni-b58a1"},"state":"ACTIVE","etag":"1_eb02eb41-cf3b-4329-af97-a455329f4dd4"}
+[debug] [2024-10-06T11:26:28.610Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:28.610Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:28.610Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-alumni-b58a1/sites pageToken=&pageSize=10
+[debug] [2024-10-06T11:26:30.240Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-alumni-b58a1/sites 200
+[debug] [2024-10-06T11:26:30.241Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-alumni-b58a1/sites {"sites":[{"name":"projects/my-alumni-b58a1/sites/my-alumni-b58a1","defaultUrl":"https://my-alumni-b58a1.web.app","appId":"1:514371997408:web:5a67257dc6060c7b844a85","type":"DEFAULT_SITE"}]}
+[debug] [2024-10-06T11:26:30.242Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:30.242Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:30.242Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:514371997408:web:5a67257dc6060c7b844a85/config [none]
+[debug] [2024-10-06T11:26:31.749Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:514371997408:web:5a67257dc6060c7b844a85/config 200
+[debug] [2024-10-06T11:26:31.749Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:514371997408:web:5a67257dc6060c7b844a85/config {"projectId":"my-alumni-b58a1","appId":"1:514371997408:web:5a67257dc6060c7b844a85","storageBucket":"my-alumni-b58a1.appspot.com","apiKey":"AIzaSyAj-tuBZZYjZJ3n4k6ql0UcqjVUlW17eDE","authDomain":"my-alumni-b58a1.firebaseapp.com","messagingSenderId":"514371997408","measurementId":"G-EBH7XPRT2L"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-10-06T11:26:38.879Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:38.880Z] Checked if tokens are valid: true, expires at: 1728216138775
+[debug] [2024-10-06T11:26:38.880Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-alumni-b58a1/sites/my-alumni-b58a1 [none]
+[debug] [2024-10-06T11:26:40.449Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-alumni-b58a1/sites/my-alumni-b58a1 200
+[debug] [2024-10-06T11:26:40.449Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-alumni-b58a1/sites/my-alumni-b58a1 {"name":"projects/my-alumni-b58a1/sites/my-alumni-b58a1","defaultUrl":"https://my-alumni-b58a1.web.app","appId":"1:514371997408:web:5a67257dc6060c7b844a85","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.6
+
+[info]   - Environments: .env.local, .env
+
+
